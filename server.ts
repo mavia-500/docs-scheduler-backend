@@ -160,4 +160,4 @@ app.delete("/api/bookings/:id", async (req, res) => {
   }
 });
 
-export default app;
+module.exports = app;
