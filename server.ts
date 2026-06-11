@@ -1,6 +1,6 @@
 ﻿import express from "express";
 import cors from "cors";
-import { createServer } from "http";
+
 import { PrismaClient, Prisma } from "@prisma/client";
 import dotenv from "dotenv";
 
@@ -160,7 +160,4 @@ app.delete("/api/bookings/:id", async (req, res) => {
   }
 });
 
-const server = createServer(app);
-server.listen(PORT, () => {
-  console.log(`Booking API server running on http://localhost:${PORT}`);
-});
+export default app;
