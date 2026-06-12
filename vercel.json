@@ -1,11 +1,11 @@
 ﻿{
-  "buildCommand": "npm install",
-  "outputDirectory": ".",
-  "functions": {
-    "server.ts": {
-      "runtime": "@vercel/node@5.1.9"
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.ts",
+      "use": "@vercel/node"
     }
-  },
+  ],
   "routes": [
     {
       "src": "/(.*)",
